@@ -1,0 +1,55 @@
+p{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0; /* Inicialmente, el título estará oculto */
+    transform: translateY(30px); /* Lo moveremos hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones de entrada */
+    animation: fadeInUp 1s ease-in-out forwards; /* Animación de entrada */
+}
+
+/* Definición de la animación "fadeInUp" */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    color:#198754;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+
+}
+
+.instagram-link {
+    color: #833AB4; /* Color del texto del enlace */
+    background-color: #FFFFFF; /* Color de fondo del enlace */
+    /* Otros estilos de enlace según tu diseño */
+}
+
+
+
+
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la parte derecha */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+
+/* Estilos opcionales para el logo de WhatsApp */
+.whatsapp-logo img {
+    width: 50px; /* Ajusta el tamaño del logo según tus preferencias */
+    height: auto;
+}
